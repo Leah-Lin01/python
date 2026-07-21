@@ -458,7 +458,7 @@ with col2:
                         safe_stress_ratio = component.get('stress_ratio', 0.0)
                         
                         st.code(f"({this_r_voltage:.1f}V)² / {r_val:.0f}Ω / {p_max:.4f}W = {safe_stress_ratio:.4f}")
-                        st.markdown(f"* **Pact/Pmax**： `{safe_stress_ratio*100:.1f}%` (Derating標準: {DERATING_TARGET*100}%)")
+                        st.markdown(f"* **Pact/Pmax**： `{safe_stress_ratio*100:.8f}%` (Derating標準: {DERATING_TARGET*100}%)")
                         
                         if component.get('is_pass', False):
                             st.success(f"🟢 **PASS (符合Derating標準)**")
