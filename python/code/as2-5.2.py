@@ -405,7 +405,7 @@ with col1:
         )
 
 with col2:
-    st.header("Step 3：Derating 分析")
+    st.header("Step 3：Derating 計算結果")
     if uploaded_file and st.button("開始計算Derating判定", type="primary"):
         with st.spinner("正在讀取行內專專規格並執行計算..."):
             try:
